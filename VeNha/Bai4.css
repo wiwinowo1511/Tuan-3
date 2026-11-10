@@ -5,7 +5,7 @@ ul {
 }
 
 li {
-  display: inline-block;      /* các mục nằm ngang nhưng vẫn đặt được width/padding */
+  display: inline-block;    
   margin-right: 5px;
 }
 
