@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.portfolio {
+  width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0 25px;
+}
+
+/* gạch ngắn dưới tiêu đề */
+.portfolio h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #2a9d8f;
+  margin: 10px auto 0;
+}
+
+.list-tab {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.list-tab li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.list-tab a {
+  text-decoration: none;
+  color: #333;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.list-tab li:first-child a {
+  color: #2a9d8f;               /* tab "All" đang chọn */
+}
+
+.galerry {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;   /* 3 ảnh mỗi hàng */
+}
+
+.galerry li {
+  width: 32%;
+  margin-bottom: 10px;
+}
+
+.galerry img {
+  display: block;
+  width: 100%;
+}

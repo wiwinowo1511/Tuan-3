@@ -1,0 +1,82 @@
+/* i. Khung chứa lớn */
+#root {
+    width: 1024px;
+    margin: 20px auto;
+}
+
+/* ii. site-header */
+#site-header {
+    text-align: center;
+    margin: 0 0 40px 0;
+    padding: 12px 0;
+    background-color: #ccc;
+    background-image: url(imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-position: 30% center;
+    color: #fff;
+    text-shadow: 2px 2px 3px #333;
+}
+
+/* iii. li trong superheroes */
+.superheroes {
+    list-style: none;
+    margin: 0 0 0 60px;
+    padding: 0;
+}
+
+.superheroes li {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    transition: width 0.3s;
+}
+
+.superheroes .hero-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px 12px 0 0;
+}
+
+/* iv. Hình trong superheroes */
+.superheroes img {
+    display: block;
+    border: 1px solid #333;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* v. Thẻ a trong superheroes */
+.superheroes a {
+    display: none;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+    text-decoration: none;
+}
+
+/* vi. Hover */
+/* 1. Hiển thị Read more + gạch chân */
+.superheroes li:hover a {
+    display: block;
+    text-decoration: underline;
+}
+
+/* 2. Tăng chiều rộng li */
+.superheroes li:hover {
+    width: 200px;
+}
+
+.superheroes li:hover .hero-header {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
